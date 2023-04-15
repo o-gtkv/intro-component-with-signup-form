@@ -1,0 +1,23 @@
+:root {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: #ff7978;
+    background-image: url(assets/images/bg-intro-desktop.png);
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.text-bold {
+    font-weight: 600;
+}

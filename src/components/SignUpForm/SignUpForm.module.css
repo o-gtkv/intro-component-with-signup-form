@@ -1,0 +1,55 @@
+.form {
+    margin-top: 22px;
+    background-color: white;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.formControl {
+    width: 100%;
+    padding: 20px 35px;
+    border-radius: 7px;
+}
+
+input.formControl {
+    border: 1px solid #dedede;
+}
+
+.formControl~.formControl {
+    margin-top: 25px;
+}
+
+button.formControl {
+    color: white;
+    background-color: #39cb8a;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.termsAndServices {
+    text-align: center;
+    color: #bebdc2;
+    padding: 0 45px;
+    font-size: 0.75rem;
+}
+
+.termsAndServices>a {
+    text-decoration: none;
+    color: #e8848c;
+    font-weight: 600;
+}
+
+.errorMsg {
+    display: block;
+    text-align: right;
+    color: red;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin: 5px;
+}
+
+.errorIcon {
+    width: 16px;
+    height: 16px;
+}
