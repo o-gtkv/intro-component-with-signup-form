@@ -11,20 +11,32 @@
     border-radius: 7px;
 }
 
+.invalidEmail {
+    color: #e8848c;
+}
+
 input.formControl {
     border: 1px solid #dedede;
 }
 
-.formControl~.formControl {
+input.formControlError {
+    border: 2px solid #e8848c;
+}
+
+.formControlWrapper~.formControlWrapper {
     margin-top: 25px;
 }
 
-button.formControl {
+.submitBtn {
     color: white;
     background-color: #39cb8a;
     border: none;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.submitBtn:active {
+    background-color: #77e2b4;
 }
 
 .termsAndServices {
@@ -43,13 +55,24 @@ button.formControl {
 .errorMsg {
     display: block;
     text-align: right;
-    color: red;
+    color: #e8848c;
     font-size: 0.8rem;
     font-style: italic;
     margin: 5px;
 }
 
+.formControlWrapper {
+    position: relative;
+}
+
 .errorIcon {
-    width: 16px;
-    height: 16px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.errorIcon.visible {
+    display: block;
 }
