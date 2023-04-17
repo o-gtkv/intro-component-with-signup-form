@@ -5,26 +5,22 @@
     padding: 40px;
 }
 
+.formControlWrapper {
+    position: relative;
+}
+
+.formControlWrapper~.formControlWrapper {
+    margin-top: 25px;
+}
+
 .formControl {
     width: 100%;
     padding: 20px 35px;
     border-radius: 7px;
 }
 
-.invalidEmail {
-    color: #e8848c;
-}
-
-input.formControl {
+.textInput {
     border: 1px solid #dedede;
-}
-
-input.formControlError {
-    border: 2px solid #e8848c;
-}
-
-.formControlWrapper~.formControlWrapper {
-    margin-top: 25px;
 }
 
 .submitBtn {
@@ -52,6 +48,14 @@ input.formControlError {
     font-weight: 600;
 }
 
+.invalidEmail {
+    color: #e8848c;
+}
+
+.textInputError {
+    border: 2px solid #e8848c;
+}
+
 .errorMsg {
     display: block;
     text-align: right;
@@ -61,15 +65,11 @@ input.formControlError {
     margin: 5px;
 }
 
-.formControlWrapper {
-    position: relative;
-}
-
 .errorIcon {
     display: none;
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 5%;
     transform: translateY(-50%);
 }
 

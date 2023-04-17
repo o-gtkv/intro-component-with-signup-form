@@ -17,7 +17,7 @@ function SignUpForm() {
                 <label className="sr-only" htmlFor='first-name'>First name</label>
                 <input
                     // className={`${style.formControl} ${errors.firstName ? style.formControlError : ''}`}
-                    className={cn(style.formControl, { [style.formControlError]: errors.firstName })}
+                    className={cn(style.formControl, style.textInput, { [style.textInputError]: errors.firstName })}
                     type="text"
                     placeholder="First Name"
                     id="first-name"
@@ -31,8 +31,8 @@ function SignUpForm() {
             <div className={style.formControlWrapper}>
                 <label className="sr-only" htmlFor='last-name'>Last name</label>
                 <input
-                    // className={`${ style.formControl } ${ errors.lastName ? style.formControlError : '' }`}
-                    className={cn(style.formControl, { [style.formControlError]: errors.lastName })}
+                    // className={`${ style.formControl } ${ errors.lastName ? style.textInputError : '' }`}
+                    className={cn(style.formControl, style.textInput, { [style.textInputError]: errors.lastName })}
                     type="text"
                     placeholder="Last Name"
                     id="last-name"
@@ -46,8 +46,8 @@ function SignUpForm() {
             <div className={style.formControlWrapper}>
                 <label className="sr-only" htmlFor='email'>Email</label>
                 <input
-                    // className={`${ style.formControl } ${ errors.email ? style.formControlError + ' ' + style.invalidEmail : '' }`}
-                    className={cn(style.formControl, { [style.formControlError]: errors.email, [style.invalidEmail]: errors.email })}
+                    // className={`${ style.formControl } ${ errors.email ? style.textInputError + ' ' + style.invalidEmail : '' }`}
+                    className={cn(style.formControl, style.textInput, { [style.textInputError]: errors.email, [style.invalidEmail]: errors.email })}
                     type="text"
                     placeholder="Email Address"
                     id="email"
@@ -64,8 +64,8 @@ function SignUpForm() {
             <div className={style.formControlWrapper}>
                 <label className="sr-only" htmlFor='password'>Password</label>
                 <input
-                    // className={`${ style.formControl } ${ errors.password ? style.formControlError : '' }`}
-                    className={cn(style.formControl, { [style.formControlError]: errors.password })}
+                    // className={`${ style.formControl } ${ errors.password ? style.textInputError : '' }`}
+                    className={cn(style.formControl, style.textInput, { [style.textInputError]: errors.password })}
                     type="password"
                     placeholder="Password"
                     id="password"
